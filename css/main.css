@@ -1719,7 +1719,7 @@ section.numberpicker article.np_container ul.np_selectnumbers li a{
 	height:30px;
 	width:42px;
 	display:block;
-	background-image:url(img/np_numbers_bg.gif);
+	background-image:url('img/np_numbers_bg.gif');
 	background-repeat:no-repeat;
 	text-decoration:none;
 	text-align:center;
