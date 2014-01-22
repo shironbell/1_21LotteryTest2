@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<link href="css/main.css" media="screen" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-latest.js"></script>
+<script type="text/javascript" src="js/customSelect.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script src="//da189i1jfloii.cloudfront.net/js/kinvey-html5-1.1.4.min.js"></script>
+
+<script type="text/javascript" src="js/mobile.js"></script>
+</head>
+<body>
+<noscript>
+</noscript>
+<body class="has-js">
+<div id="container">
+<header id="header">
+<nav>
+<ul>
+<li class="selected"><a href="#pick.html">Play</a></li>
+<li><a href="pick.html">Results</a></li>
+<li><a href="pick.html">Account</a></li>
+<li><a href="pick.html">Log In</a></li>
+
+</ul>
+</nav>
+</header>
+<section class="gamescreen numberpicker game_options">
+  <aside class="padbot">
+    <div class="ballimg"></div>
+    <h1 class="powerball"> Powerball </h1>
+    <p class="gamedate"> Thursday Jan 23rd 8:30pm <span> Jackpot: $15,000,000 </span> </p>
+    <p class="gamescreen_info trigger"> <a href="http://m.ozlotteries.com/play/powerball/standard#"> View information about this game </a> </p>
+    <div class="toggle_container" style="display: none;">
+      <div class="block">
+        <div class="info_upcoming">
+          <h2>Next Draw</h2>
+          <p>Draw 923 : 23rd January 2014 : AUD $15 Million</p>
+          <p>Entries close in 4 days, 12 hours</p>
+          <p><strong>Jackpot<br>
+            $15,000,000</strong></p>
+        </div>
+        <p><b>About the Game:</b> For Powerball, 2 sets of numbers are drawn from 2 machines, first contains 40 balls numbered from 1 to 40 inclusive and the second one contains 20 balls numbered from 1 to 20 inclusive. For a standard game, you choose 6 numbers from the first range of 1 to 40 and a Powerball number from the second range of 1 to 20.<br>
+          In total, the machines draw 7 numbers. Firstly, the 6 winning numbers which are drawn from the first barrel of 40 numbers and secondly 1 Powerball number which is drawn from the second barrel of 20 numbers.<br>
+        </p>
+      </div>
+    </div>
+    <div class="np_selectgame_container">
+      <select name="apdiv" class="changeGame" style="position: absolute; opacity: 0; font-size: 14px; height: 36px;">
+        <option value="">Select a different game</option>
+        <option value="/play.php?lottery_id=1">Monday Lotto</option>
+        <option value="/play.php?lottery_id=8">OZ Lotto</option>
+        <option value="/play.php?lottery_id=3">Wednesday Lotto</option>
+        <option value="/play.php?lottery_id=13">Powerball</option>
+        <option value="/play.php?lottery_id=5">Saturday Lotto</option>
+        <option value="/play.php?lottery_id=6">The Pools</option>
+        <option value="/play.php?lottery_id=9">$2 Jackpot Lottery</option>
+        <option value="/play.php?lottery_id=10">$5 Jackpot Lottery</option>
+      </select>
+      <span class="customStyleSelectBox" style="display: inline-block;"><span class="customStyleSelectBoxInner" style="width: 238px; display: inline-block;">Select a different game</span></span> </div>
+  </aside>
+  <h1 class="gametypes recent"> Standard </h1>
+  <form name="game_offer" action="http://m.ozlotteries.com/play" method="post" class="game_picker_form">
+    <input type="hidden" name="game_offer_id" value="430">
+    <input type="hidden" id="old_count" name="old_count" value="18">
+    <input type="hidden" name="extra_games" value="0">
+    <input type="hidden" name="lottery_id" value="13">
+    <input type="hidden" name="user_validated" value="true">
+    <input type="hidden" name="game_name_ref" value="610136913">
+    <input type="hidden" name="page_vscroll" value="0">
+    <input type="hidden" name="page_hscroll" value="0">
+    <input type="hidden" name="add_games" value="Add to Basket">
+    <article>
+      <h3>Choose Starting Draw:</h3>
+      <ul class="numberpicker_options multiline jumboselect">
+        <li>
+          <input type="hidden" name="draw_id" id="draw_id" value="17246">
+          <p class="trigger"><em>Draw 923</em> on <em>23 January 2014</em><br>
+            <strong>AUD $15 Million</strong></p>
+          <div class="toggle_container" style="display: none;">
+            <div class="block">
+              <ul class="numberpicker_options_sub">
+                <li data-id="17246"><em>Draw 923</em> on <em>23 January 2014</em><br>
+                  <strong>AUD $15 Million</strong></li>
+                <li data-id="17255"><em>Draw 924</em> on <em>30 January 2014</em><br>
+                  <strong>AUD $3 Million</strong></li>
+                <li data-id="17265"><em>Draw 925</em> on <em>06 February 2014</em><br>
+                  <strong>AUD $3 Million</strong></li>
+                <li data-id="17275"><em>Draw 926</em> on <em>13 February 2014</em><br>
+                  <strong>AUD $3 Million</strong></li>
+                <li data-id="17286"><em>Draw 927</em> on <em>20 February 2014</em><br>
+                  <strong>AUD $3 Million</strong></li>
+                <li data-id="17297"><em>Draw 928</em> on <em>27 February 2014</em><br>
+                  <strong>AUD $3 Million</strong></li>
+                <li data-id="17306"><em>Draw 929</em> on <em>06 March 2014</em><br>
+                  <strong>AUD $3 Million</strong></li>
+                <li data-id="17317"><em>Draw 930</em> on <em>13 March 2014</em><br>
+                  <strong>AUD $3 Million</strong></li>
+                <li data-id="17328"><em>Draw 931</em> on <em>20 March 2014</em><br>
+                  <strong>AUD $3 Million</strong></li>
+                <li data-id="17338"><em>Draw 932</em> on <em>27 March 2014</em><br>
+                  <strong>AUD $3 Million</strong></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </article>
+    <article class="sml_pad_left">
+      <div class="small_dropdown_container">
+        <h3>Number of Games:</h3>
+        <select name="new_count" id="new_count" style="position: absolute; opacity: 0; font-size: 14px; height: 36px;">
+          <option value="4"> 4 games</option>
+          <option value="5"> 5 games</option>
+          <option value="6"> 6 games</option>
+          <option value="7"> 7 games</option>
+          <option value="8"> 8 games</option>
+          <option value="9"> 9 games</option>
+          <option value="10"> 10 games</option>
+          <option value="11"> 11 games</option>
+          <option value="12"> 12 games</option>
+          <option value="13"> 13 games</option>
+          <option value="14"> 14 games</option>
+          <option value="15"> 15 games</option>
+          <option value="16"> 16 games</option>
+          <option value="17"> 17 games</option>
+          <option value="18" selected="selected"> 18 games</option>
+          <option value="19"> 19 games</option>
+          <option value="20"> 20 games</option>
+          <option value="21"> 21 games</option>
+          <option value="22"> 22 games</option>
+          <option value="23"> 23 games</option>
+          <option value="24"> 24 games</option>
+          <option value="25"> 25 games</option>
+          <option value="26"> 26 games</option>
+          <option value="27"> 27 games</option>
+          <option value="28"> 28 games</option>
+          <option value="29"> 29 games</option>
+          <option value="30"> 30 games</option>
+        </select>
+        <span class="customStyleSelectBox changed" style="display: inline-block;"><span class="customStyleSelectBoxInner" style="width: 118px; display: inline-block;"> 4 games</span></span> </div>
+      <div class="small_dropdown_container">
+        <h3>Multidraw:</h3>
+        <select name="multidraw" id="multidraw" style="position: absolute; opacity: 0; font-size: 14px; height: 36px;">
+          <option value="1">None</option>
+          <option value="2 ">2  Draws</option>
+          <option value="3 ">3  Draws</option>
+          <option value="4 ">4  Draws</option>
+          <option value="5 ">5  Draws</option>
+          <option value="6 ">6  Draws</option>
+          <option value="7 ">7  Draws</option>
+          <option value="8 ">8  Draws</option>
+          <option value="9 ">9  Draws</option>
+          <option value="10 ">10  Draws</option>
+        </select>
+        <span class="customStyleSelectBox" style="display: inline-block;"><span class="customStyleSelectBoxInner" style="width: 118px; display: inline-block;">None</span></span> </div>
+      <script type="text/javascript">
+					function
+				</script>
+      <div class="clear"></div>
+    </article>
+  </form>
+  <div class="clear"></div>
+  <footer>
+    <button class="decidenumbers pick">Pick your numbers</button>
+    <button class="decidenumbers quick_pick_all">Quickpick All games</button>
+  </footer>
+</section>
+</body></html>
