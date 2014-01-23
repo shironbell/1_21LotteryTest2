@@ -17,6 +17,7 @@
 ; enter your ssh-cli preferences here...
 
 [preview]
+index_file = index.html
 ; enter your preview preferences here...
 
 [salesforce]

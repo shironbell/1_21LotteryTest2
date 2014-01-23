@@ -1,10 +1,3 @@
-/**
-* Created with LotApptest.
-* User: shironbell
-* Date: 2014-01-12
-* Time: 12:25 AM
-* To change this template use Tools | Templates.
-*/
 (function($){
  $.fn.extend({
  

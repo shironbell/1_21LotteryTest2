@@ -1,83 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>javascript:void(0)
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-<link href="css/main.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="css/loginform.css" media="screen" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/jquery-latest.js"></script>
 <script type="text/javascript" src="js/customSelect.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-<script type="text/javascript">
-// Place before js/mobile.js
-var panels = [];
-panels = [
-			[40, 6, 'Numbers']
-			,[20, 1, 'Powerball']
-		];
-</script>
+<script type="text/javascript" src="js/app.js"></script>
+<script src="//da189i1jfloii.cloudfront.net/js/kinvey-html5-1.1.4.min.js"></script>
+
+    
+    
+
 <script type="text/javascript" src="js/mobile.js"></script>
 </head>
-<body>
+    <body>
 <noscript>
 </noscript>
 <body class="has-js">
-	<div id="container">
-		<header id="header">
-					
-			<nav>
-				<ul>
-				  <li><a href="play">Play</a></li>
-					<li><a href="lotto-results">Results</a></li>
-					<li><a href="./login_files/login.htm">Account</a></li>
-				  <li class="selected"><a href="login.php">Log In</a></li>
-					<li id="cart"><a class="viewcart" href="basket.php">Cart</a></li>
-				</ul>
-			</nav>
-		</header>
+<div id="container">
+<header id="header">
+
+</header>
 	<section class="welcome">
-
-<style media="screen" type="text/css">
-	@import url("/css/login_required.css");
-</style>
-
-	<form name="form_login" action="./login_files/login.htm" method="post" accept-charset="UTF-8"> <input type="hidden" name="form" value="form_login">
-		<input type="hidden" name="source" value="">
-		<input type="hidden" name="id" value="">
-		<input type="hidden" name="qty" value="">
-		<input type="hidden" name="syndicate_purchase_unique_id" value="">
-		<input type="hidden" name="create_private_syndicate" value="">
-		<input type="hidden" name="game_offer_id" value="">
-		<input type="hidden" name="redirect_to" value="">
-		<input type="hidden" name="referring_url" value="/my_account.php">
-		<input type="hidden" name="referring_url_hash" value="">
-	
-		<script type="text/javascript">
-			$(function(){
-				login_form = $("form[name=form_login]");
-				login_form.submit(function(){
-					
-				});
-			});
-		</script>
-	
-			<ol>
-				<li>
-					<label for="email">Email</label><br>
-					<input type="text" name="email" placeholder="Your Email Address" tabindex="11" required="required">
-					
-				</li>
-				<li>
-					<label for="password">Password</label><br>
-					<input type="password" name="password" placeholder="Enter Your Password" tabindex="12" required="required">
-					
-				</li>
-				<li><input type="submit" name="submit" value="Log Me In" id="submit" tabindex="13"></li>
-				<li class="login_joinnow">
-					<label for="join">Not a Member?</label><br>
-					<input id="join" value="Join Now" type="button" onclick="location.href = &#39;/signup.php&#39;">
-				</li>
-			</ol>
-		</form></section>
-
-
-</section>
-</body></html>
+        
+	<div class='login'>
+	  
+	  <div align="center"><img src="img/logo.png"> </div>
+        <br>
+	  <h2>Login</h2>
+	  <input name='username' placeholder='Username' type='text'>
+	  <input id='pw' name='password' placeholder='Password' type='password'>
+	  <br><br><br>
+	  <input class='animated' type='submit' value='Login'>
+        <br> <br>
+	  	<h1>&nbsp;</h1>
+        
+        </div></section></div>
+        
+        </body></html>
