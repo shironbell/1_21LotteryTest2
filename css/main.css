@@ -1119,7 +1119,7 @@ section.gamescreen article{
 	border-bottom:1px solid #d7dde4;
 	border-left:1px solid #d7dde4;
 	border-right:1px solid #d7dde4;
-	background-color:#000;
+	background-color:#999;
 }
 
 section.gamescreen > h1,
@@ -1777,7 +1777,7 @@ section.numberpicker article.np_container ul.np_selectnumbers li a{
 	height:30px;
 	width:42px;
 	display:block;
-	background-image:url(http://bellmedialab.com/oz2/files/np_numbers_bg.gif);
+	background-image:url(np_numbers_bg.gif);
 	background-repeat:no-repeat;
 	text-decoration:none;
 	text-align:center;
@@ -1828,7 +1828,7 @@ section.numberpicker aside.np_yournumbers ul li{
 }
 
 section.numberpicker aside.np_yournumbers ul li a{
-	background-image:url(/images/m/np_yournumbers_bg.gif);
+	background-image:url(np_yournumbers_bg.gif);
 	background-repeat:no-repeat;
 	background-position:0 -78px;
 	font-size:130%;
@@ -3046,7 +3046,7 @@ ul.display_results li{
 	font-weight:bold;
 	font-size:100%;
 	margin-right:3px;
-	background-image:url(http://m.ozlotteries.com/images/m/bg_result_balls.gif);
+	background-image:url(bg_results.png);
 	background-repeat:no-repeat;
 	background-position:0px 0px;
 }

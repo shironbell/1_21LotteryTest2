@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<link href="css/main.css" media="screen" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-latest.js"></script>
+<script type="text/javascript" src="js/customSelect.js"></script>
+    <script src="js/kinvey-html5-1.1.4.min.js"></script>
+
+
+    <script type="text/javascript">
+// Place before js/mobile.js
+var lotto_state = "california"
+var lotto = "Pick 3"
+var panels = [];
+panels = [
+			[40, 3, 'Numbers']
+			
+			
+		];
+</script>
+    
+    
+<script type="text/javascript" src="js/mobile.js"></script>
+</head>
+<body>
+<noscript>
+</noscript>
+<body class="has-js">
+<div id="container">
+<header id="header">
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+    <li class="selected"><a href="#">Play</a></li>
+    <li><a href="mypicks.html">My Picks</a></li>
+<li><a href="index.html">Results</a></li>
+<li><a href="index.html">Account</a></li>
+<li><a href="index.html">Log Out</a></li>
+
+</ul>
+</nav>
+</header>
+      <br>
+      <div align="center"><  <select name="apdiv" class="changeGame" style="position: absolute; opacity: 0; font-size: 12px; height: 24px; width: 240px;">
+        <option value="">Select a different game</option>
+        <option value="pick_daily3.html">Daily 3</option>
+        <option value="pick_daily4.html">Daily 4</option>
+        <option value="pick.html">Fantasy 5</option>
+        <option value="pick.html">Daily Derby</option>
+        <option value="pick.html">SuperLotto Plus</option>
+          </select></div>
+<section class="gamescreen numberpicker game_options" style="display: none;">
+</footer>
+</section>
+<section class="gamescreen numberpicker game_picker" style="">
+<aside class="padbot">
+<div class="ballimg"></div>
+</aside>
+<h1 class="gametypes recent">&nbsp;</h1>
+<div id="number_picker_overlay" class="np_game_indicator">
+<div>Game <span id="overlay_game_number">1</span></div>
+</div>
+<div class="number_pickers">
+</div>
+   
+<div class="clear"></div>
+<footer>
+	
+<button class="reset">Reset</button>
+<button class="quickpick">Quickpick</button>
+
+<button id="ping">Save</button>

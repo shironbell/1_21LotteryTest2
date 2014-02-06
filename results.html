@@ -1,12 +1,85 @@
-<!--
-To change this template use Tools | Templates.
--->
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<link href="css/main.css" media="screen" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-latest.js"></script>
+<script type="text/javascript" src="js/customSelect.js"></script>
+<script type="text/javascript">
+// Place before js/mobile.js
+var panels = [];
+panels = [
+			[40, 6, 'Numbers']
+			,[20, 1, 'Powerball']
+		];
+</script>
+<script type="text/javascript" src="js/mobile.js"></script>
 </head>
 <body>
+<noscript>
+</noscript>
+<body class="has-js">
+<div id="container">
+<header id="header">
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+    <li><a href="choosegame.html">Play</a></li>
+    <li><a href="mypicks.html">My Picks</a></li>
+<li class="selected"><a href="#">Results</a></li>
+<li><a href="index.html">Account</a></li>
+<li><a href="index.html">Log Out</a></li>
 
-</body>
-</html>
+</ul>
+</nav>
+</header>
+	<section class="gamescreen latest_results">
+	<h1 class="gametypes recent">View Latest Results</h1>
+	<article>
+		
+		<h1>Lotto</h1>
+		<div class="clear"></div>
+		<aside>
+			<ul class="display_results">
+					<li>27</li>
+					<li>23</li>
+					<li>7</li>
+					<li>38</li>
+					<li>40</li>
+					<li>14</li>
+					<li class="supp">4</li>
+					
+			</ul>
+		</aside>
+		<a href="#"><button class="greybtns btnlonger">View Past Results</button></a>
+		<div class="clear"></div>
+		<div class="playnow_btn_pos"><a href="choosegame.html"><button>Play Now</button></a></div>
+	  <p class="next_draw">
+			<strong>Next Draw</strong><br>
+				<span>$4,000,000 **</span><br>
+		  Jan 18 08:30pm		</p>
+	</article>
+	<article>
+  <p class="draw_info">
+			<span>Powerball</span><br class="lineheight_space">
+	  <h1>Powerball</h1>
+		<div class="clear"></div>
+		<aside>
+			<ul class="display_results">
+					<li>24</li>
+					<li>14</li>
+					<li>1</li>
+					<li>20</li>
+					<li>29</li>
+					<li>19</li>
+					<li class="supp">11</li>
+			</ul>
+		</aside>
+	
+	  <a href="#"><button class="greybtns btnlonger">View Past Results</button></a>
+		<div class="clear"></div>
+	  <div class="playnow_btn_pos"><a href="choosegame.html"><button>Play Now</button></a></div>
+		<p class="next_draw">&nbsp;</p>
+	</article>
+	</section>
+</body></html>

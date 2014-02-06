@@ -1,11 +1,14 @@
+/**
+* Created with LotApptest.
+* User: shironbell
+* Date: 2014-01-12
+* Time: 12:04 AM
+* To change this template use Tools | Templates.
+*/
+panels=[[45,6,'Numbers']];
+
 $(document).ready(function(){
-
-    
-  
-
-    
     function setupLabel() {
-        
 		if ($('.label_check input').length) {
 			$('.label_check').each(function(){
 				$(this).removeClass('c_on');
@@ -22,10 +25,7 @@ $(document).ready(function(){
 				$(this).parent('label').addClass('r_on');
 			});
 		};
-        
 	};
-    
-    
 
 	$(".toggle_container").hide();
 
@@ -316,79 +316,39 @@ $(document).ready(function(){
 		/**
 		 * Per panel next button
 		 */
-		 $('button.submit').click(function(e) {
+		$('button.next').click(function(e) {
 			e.preventDefault();
-             games[current_game - 1] = current_selection;
-             
-             
-        });
-        
-        
-        $('button.next').click(function(e) {
-			e.preventDefault();
-  alert('Kinvey Ping Success. Kinvey Service is alive, version: ' + response.version + ', response: ' + response.kinvey);
+
 			// find the current game and check it
-//			var current_game = parseInt($('.games .current').html(), 10);
-//			if (!check_current_games()) return;
+			var current_game = parseInt($('.games .current').html(), 10);
+			if (!check_current_games()) return;
 
 			// get the total number of games
-//			var total_game_parts = $('.games .total').html().split(' ');
-//			var total_games = parseInt(total_game_parts[0], 10);
+			var total_game_parts = $('.games .total').html().split(' ');
+			var total_games = parseInt(total_game_parts[0], 10);
 
 			// show a loading overlay, if this is not the last game
-//			if (current_game != total_games) {
-//				show_game_number_overlay(current_game+1);
-//			}
+			if (current_game != total_games) {
+				show_game_number_overlay(current_game+1);
+			}
 
 			// Save the current game
-			// 
-		
 			games[current_game - 1] = current_selection;
-            
-            
 
 			// Last game? lets submit
-			//if (current_game == total_games) {
-	//			var form = $('form.game_picker_form');
-	//			$('#old_count').val($('#new_count').val());
-	//			for (var n in games) {
-	//				for (var i in panels) {
-	//					for (var p in games[n][i]) {
-	//						form.append('<input type="hidden" name="game' + n + '_set' + i + '_' + p + '" value="' + games[n][i][p] + '">');
-	//					}
-	//				}
-	//			}
-            var add = $('#add');
-          add.on('submit', function(e) {
-            var button = add.find('button').attr('disabled', 'disabled');// Update UI.
-
-    // Retrieve the form data.
-    var data = { };
-    add.serializeArray().forEach(function(input) {
-      data[input.name] = input.value;
-    });
-
-    // Add the book.
-    status.trigger('loading');
-    Kinvey.DataStore.save('games', data).then(function() {
-      list.trigger('update');
-    }, function(error) {
-      status.trigger('error', error);
-    }).then(function() {
-      // Restore UI.
-      add.trigger('reset');
-      button.removeAttr('disabled');
-    });
-
-    e.preventDefault();// Stop submit.
-  });
+			if (current_game == total_games) {
+				var form = $('form.game_picker_form');
+				$('#old_count').val($('#new_count').val());
+				for (var n in games) {
+					for (var i in panels) {
+						for (var p in games[n][i]) {
+							form.append('<input type="hidden" name="game' + n + '_set' + i + '_' + p + '" value="' + games[n][i][p] + '">');
+						}
+					}
+				}
 				form.submit();
-             // Add.
-  // ----
-  
-
 				return;
-		//	}
+			}
 
 			// Clear the panel
 			$('button.reset').click();
@@ -456,15 +416,6 @@ $(document).ready(function(){
 			form.submit();
 			return;
 		});
-        
-       $("button.ping").click(function(e) {
-			e.preventDefault();
-			for (var i in panels) {
-				var qp = quick_pick(number_list[i], panels[i][1]);
-				select_numbers(i, qp);
-				current_selection[i] = qp;
-			}
-		});
 
 		/**
 		 * Add to basket - for jackpot lotteries
@@ -487,45 +438,4 @@ $(document).ready(function(){
 			}
 		});
 	}
-	
-	 var promise = Kinvey.init({
-    appKey    : 'kid_VeXlW6TPHi',
-    appSecret : '896f88d7a9214df0bd174fb4600813c1',
-    sync      : { enable: true, online: navigator.onLine }
-  }).then(function(activeUser) {
-    // Auto-generate the active user if not defined.
-    if(null === activeUser) {
-      return Kinvey.User.create();
-    }
-  }).then(null, function(error) {
-    status.trigger('error', error);
-  });
-    
-    
-	
-(function ping() {
-        
-            var a = current_selection;
-            var b = lotto_state;
-            var c = lotto;
-      var button = document.getElementById('ping');
-    
-    button.addEventListener('click', function() {
-      check_current_games();
-    
-        if (check_current_games() !== false){
-            var promise = Kinvey.DataStore.save('books', {author  : a ,title : b, lotto: c});
-        promise.then(function(response) {
-              alert('Your Picks were saved ');
-                                         }, 
-        function(error) {
-              alert('Something went wrong');
-                        });
-                    }
-              });
-        }());
-    
-    
-    
-        
 });
