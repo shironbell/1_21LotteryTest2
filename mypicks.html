@@ -1,52 +1,60 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Bookshelf Sample Application</title>
-    
-    <meta name="description" content="Bookshelf Sample Application" />
-    <meta name="HandheldFriendly" content="true" />
-    <meta name="MobileOptimized" content="320" />
-    <meta name="viewport" content="width=device-width" />
+<meta charset="utf-8" />
+   
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <!-- Bootstrap. -->
-    <link href="scripts/bootstrap.min.css" rel="stylesheet" />
-	<link href="css/main.css" media="screen" rel="stylesheet" type="text/css" />
+<!-- Bootstrap. -->
+            
+<link href="css/bootstrap.css" rel="stylesheet" />
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/mobile.js"></script>
+<script src="js/kinvey-html5-1.1.4.min.js"></script>
+<link href="js/lotto.js" rel="stylesheet" />
+      
 
-  </head>
-<body>
-    <!-- Header. -->
-	<header>    
-      <nav>
+<body class="has-js" quick-markup_injected="true">
+<!-- Header. -->
+
+<header>    
+<nav>
 <ul>
 <li><a href="index.html">Home</a></li>
-    <li class="selected"><a href="#">My Picks</a></li>
+<li><a href="choosegame.html">Play</a></li>
+<li class="selected"><a href="#">My Picks</a></li>
 <li><a href="results.html">Results</a></li>
-<li><a href="index.html">Log Out</a></li>
+<li><a href="index.html">Account</a></li>
+
 
 </ul>
 </nav>
-</header>
-    <div class="page-header">
+      </header>
+      
+      <div class="page-header">
+      <h1>Your Picks</h1>
     </div>
+
     <!-- Status. -->
     <p class="alert alert-info" id="status">Loading…</p>
 
+    <!-- Add. -->
+    
+   
 
     <!-- List. -->
-    <h2>Your Picks</h2>
-<table class="table table-hover" id="list">
+    <table class="table table-hover" id="list">
       <thead>
         <tr>
           <th>#</th>
+          
           <th>Picks</th>
           <th>State</th>
             <th>Game</th>
-          <th></th>
         </tr>
       </thead>
       <tbody class="hide" id="row-template">
-       <tr>
+        <tr>
           <td data-placeholder="index"></td>
           <td data-placeholder="author"></td>
             <td data-placeholder="title"></td>
@@ -54,20 +62,45 @@
           <td><button class="btn btn-danger btn-xs" data-action="shred">Delete</button></td>
         </tr>
       </tbody>
-  </table>
+    </table>
 
     <!-- Filter. -->
-    
-
-    <!-- Footer. -->
-    <footer>
+   
       
+      <div id="container">
+		
+	
+		
+	
+       
+
+		<footer>
+             
+
+        	
+
+         
+	  </footer>
+	</section>
+          
+	
+<footer>
+				
 </footer>
 
-    <!-- Libraries -->
-<script src="scripts/jquery.min.2.0.3.js"></script>
-<script src="scripts/kinvey-html5-1.1.1.min.js"></script>
+        
 
-<script src="scripts/app.js"></script>
-</body>
+
+
+
+
+  <!-- Footer. -->
+    
+
+    <!-- Libraries -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//da189i1jfloii.cloudfront.net/js/kinvey-html5-1.1.1.min.js"></script>
+
+    <script src="js/app.js"></script>
+  </body>
 </html>

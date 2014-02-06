@@ -14,21 +14,9 @@
  * limitations under the License.
  */
 /* global $: true, Kinvey: true */
-
-
 (function() {
   'use strict';
-var button = document.getElementById('ping');
-  button.addEventListener('click', function() {
-    var promise = Kinvey.ping();
-    promise.then(function(response) {
-      alert('Your picks were saved ');
-    }, function(error) {
-      alert('Kinvey Ping Failed. Response: ' + error.description);
-    });
-  });
-  
-  
+
   // Setup.
   
   // Initialize Kinvey.
