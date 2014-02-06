@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
-    <title>Bookshelf Sample Application</title>
+    <title>Lotto Demo</title>
     
     <meta name="description" content="Bookshelf Sample Application" />
     <meta name="HandheldFriendly" content="true" />
@@ -11,8 +11,10 @@
 
     <!-- Bootstrap. -->
     <link href="scripts/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/main.css" media="screen" rel="stylesheet" type="text/css" />
+
   </head>
-  <body>
+<body>
     <!-- Header. -->
 	<header>    
       <nav>
@@ -26,7 +28,7 @@
 
 </ul>
 </nav>
-      </header>
+</header>
     <div class="page-header">
     </div>
 
@@ -36,7 +38,7 @@
 
     <!-- List. -->
     <h2>Your Picks</h2>
-    <table class="table table-hover" id="list">
+<table class="table table-hover" id="list">
       <thead>
         <tr>
           <th>#</th>
@@ -55,42 +57,9 @@
           <td><button class="btn btn-danger btn-xs" data-action="shred">Delete</button></td>
         </tr>
       </tbody>
-    </table>
+  </table>
 
-    <!-- Filter. -->
-    <form class="form-inline well" id="filter" role="form">
-      <div class="form-group">
-        <label class="sr-only" for="search">Search</label>
-        <input class="form-control input-sm" id="search" name="search" type="search" placeholder="Search" />
-      </div>
-      <div class="form-group">
-        <label class="sr-only" for="sort">Sort</label>
-        <select class="form-control input-sm" id="sort" name="sort">
-          <option value="author">Sort by author</option>
-          <option value="title">Sort by title</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label class="sr-only" for="limit">Limit</label>
-        <select class="form-control input-sm" id="limit" name="limit">
-          <option value="">No limit</option>
-          <option value="5">5</option>
-          <option value="10">10</option>
-          <option value="25">25</option>
-        </select>
-      </div>
-      <button class="btn btn-link">Show!</button>
-    </form>
-
-    <!-- Footer. -->
-    <footer>
-      <em><small>Bookshelf Sample Application demonstrating Kinvey's JavaScript library.</small></em>
-    </footer>
-
-    <!-- Libraries -->
-    <script src="scripts/jquery.min.2.0.3.js"></script>
-    <script src="scripts/kinvey-html5-1.1.1.min.js"></script>
-
-    <script src="scripts/app.js"></script>
-  </body>
+  <!-- Filter. --><!-- Footer. -->
+  <footer></footer>
+</body>
 </html>
