@@ -12,64 +12,57 @@
     <!-- Bootstrap. -->
     <link href="scripts/bootstrap.min.css" rel="stylesheet" />
   </head>
-  <body>
+<body>
     <!-- Header. -->
-	<header>    
-      <nav>
+	<div id="container">
+<header id="header">
+<nav>
 <ul>
-<li><a href="index.html">Home</a></li>
-    <li><a href="choosegame.html">Play</a></li>
-    <li class="selected"><a href="#">My Picks</a></li>
+<li><a  href="index.html">Home</a></li>
+    <li class="selected"><a href="choosegame.html">Play</a></li>
+    <li><a href="mypicks.html">My Picks</a></li>
 <li><a href="results.html">Results</a></li>
 <li><a href="index.html">Account</a></li>
-<li><a href="index.html">Log Out</a></li>
 
 </ul>
-</nav>
-      </header>
+</header>
     <div class="page-header">
-      <h1>Bookshelf Sample Application</h1>
+      <h3>Your Picks</h3>
     </div>
 
     <!-- Status. -->
-    <p class="alert alert-info" id="status">Loading…</p>
+<p class="alert alert-info" id="status">Loading…</p>
 
-    <!-- Add. -->
-    <form class="form-inline well" id="add" role="form">
-      <div class="form-group">
-        <label class="sr-only" for="title">Title</label>
-        <input autofocus required class="form-control" id="title" name="title" type="text" placeholder="Enter Title" />
-      </div>
-      <div class="form-group">
-        <label class="sr-only" for="author">Author</label>
-        <input required class="form-control" id="author" name="author" type="text" placeholder="Enter Author" />
-      </div>
-      <button class="btn btn-primary" type="submit">Place the book onto the shelf!</button>
-    </form>
-
-    <!-- List. -->
-    <h2>Books</h2>
-    <table class="table table-hover" id="list">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Title</th>
-          <th>Author</th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody class="hide" id="row-template">
-        <tr>
-          <td data-placeholder="index"></td>
-          <td data-placeholder="title"></td>
+  <!-- Add. -->
+   
+  <!-- List. -->
+   
+  <table class="table table-hover" id="list">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Date</th>
+          
+         <th>Game</th>
+           <th>Picks</th>
+          <th>&nbsp;</th>
+        
+      </tr>
+    </thead>
+    <tbody class="hide" id="row-template">
+      <tr>
+        <td data-placeholder="index"></td>
+        <td data-placeholder="title"></td>
+        <td data-placeholder="lotto"></td>
           <td data-placeholder="author"></td>
-          <td><button class="btn btn-danger btn-xs" data-action="shred">Shred</button></td>
-        </tr>
-      </tbody>
-    </table>
+        <td><button class="btn btn-danger btn-xs" data-action="shred">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
 
-    <!-- Filter. -->
-    <form class="form-inline well" id="filter" role="form">
+  <!-- Filter. -->
+  
+  <!--  <form class="form-inline well" id="filter" role="form">
       <div class="form-group">
         <label class="sr-only" for="search">Search</label>
         <input class="form-control input-sm" id="search" name="search" type="search" placeholder="Search" />
@@ -91,17 +84,17 @@
         </select>
       </div>
       <button class="btn btn-link">Show!</button>
-    </form>
+    </form>-->
 
-    <!-- Footer. -->
-    <footer>
-      <em><small>Bookshelf Sample Application demonstrating Kinvey’s JavaScript library.</small></em>
-    </footer>
-
+  <!-- Footer. -->
+  <footer>
+     
+</footer>
+        </header>
     <!-- Libraries -->
     <script src="scripts/jquery.min.2.0.3.js"></script>
     <script src="scripts/kinvey-html5-1.1.1.min.js"></script>
 
     <script src="scripts/app.js"></script>
-  </body>
+</body>
 </html>
